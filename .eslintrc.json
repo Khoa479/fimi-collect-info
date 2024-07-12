@@ -1,0 +1,28 @@
+{
+	"extends": ["next/core-web-vitals", "next", "prettier"],
+	"plugins": ["prettier", "simple-import-sort"],
+	"rules": {
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"prettier/prettier": [
+			"error",
+			{
+				"arrowParens": "avoid",
+				"useTabs": true,
+				"tabWidth": 2,
+				"printWidth": 80,
+				"bracketSameLine": false,
+				"bracketSpacing": true,
+				"endOfLine": "lf",
+				"trailingComma": "none",
+				"semi": false,
+				"singleAttributePerLine": true,
+				"singleQuote": true,
+				"jsxSingleQuote": true,
+				"quoteProps": "as-needed",
+				"proseWrap": "preserve",
+				"plugins": ["prettier-plugin-tailwindcss"]
+			}
+		]
+	}
+}
